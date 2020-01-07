@@ -33,4 +33,25 @@ $(document).ready(function(){
   		arrows:true
 	})
 
+
+	$('section.test button').click(function(){
+		$(this).closest('.test_slide','section.test').next('.test_slide').addClass('active')
+	})
+
+	var clock = $('section.promo .clock_wrap').FlipClock({
+		clockFace : "DailyCounter",
+		autoStart: false,
+		countdown: true,
+		language: 'ru-ru'
+
+	});
+	var dt = "January 30 2020 00:00:00";
+	var first = new Date(dt);
+	var last = Date.now();
+	var remaining = first - last;
+	remaining /= 1000;
+	clock.setTime(remaining);
+	clock.setCountdown(true);
+	clock.start();
+
 })
