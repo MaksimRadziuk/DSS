@@ -7,8 +7,12 @@ $(document).ready(function(){
 		$('.hidden_wrap').removeClass('active');
 		$(this).siblings('.hidden_wrap').addClass('active');
 	})
-	$('.close').click(function(){
+	$('.hidden_wrap .close').click(function(){
 		$(this).parent('.hidden_wrap').removeClass('active');
+	})
+	$('.popup .close').click(function(){
+		$(this).closest('.popup').hide();
+		$('#popup_background').hide();
 	})
 	$('#self_trade-button').click(function(){
 		$(this).addClass('active');
@@ -54,4 +58,16 @@ $(document).ready(function(){
 	clock.setCountdown(true);
 	clock.start();
 
+
+	/*function openPopup (){
+		let getId = $(this).attr('data-target');
+		$(getId).show();
+		$('.popup_background').show();
+	}*/
+	$('.firstScreen span').click(function(){
+		let getId = $(this).attr('data-target');
+		alert(getId);
+		$('{$getId}').show();
+		$('.popup_background').show();
+	})
 })
