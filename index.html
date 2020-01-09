@@ -6,7 +6,6 @@
 
 <head>
 
-	<meta charset="utf-8">
 
 	<title>DSS</title>
 	<meta name="description" content="">
@@ -34,7 +33,64 @@
 			</div>
 		</div>
 		<div class="popup_content">
-			<div class="video_wrap"></div>
+			<div class="video_wrap">
+				<iframe class="modal-video" src="https://www.youtube.com/embed/u6LvZz6lBQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="loginWindow">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<input type="text" placeholder="Имя пользователя">
+				<input type="text" placeholder="Пароль">
+				<button class="submit">Войти</button>
+				<input type="checkbox" id="rememberMe">
+				<label for="rememberMe">Запомнить меня</label>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" id="getRegistrationLoginWindow">Еще не пользователь DSS? Зарегистрируйтесь</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="registration">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<div class="input_wrapper">
+					<input type="text" placeholder="Имя пользователя">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Реферальная ссылка">
+					<input type="text" placeholder="Подтвердите пароль">
+					<input type="text" placeholder="Введите ваш email">
+					<div class="select_wrap">
+						<select name="location" id="">
+							<option value="rus">Россия</option>
+							<option value="by">Беларусь</option>
+							<option value="ua">Украина</option>
+							<option value="kz">Казахстан</option>
+							<option value="chn">Китай</option>
+						</select>
+						<div class="select_item"></div>
+					</div>
+					<div class="captcha"></div>
+					<div class="checkbox_wrap">
+						<input type="checkbox" id="agreeRegistrationForm">
+						<label for="agreeRegistrationForm">Я согласен с <a href="#">правилами сервиса</a>, <a href="#">агентским договором</a> и даю свое согласие на <a href="#">обработку персональных данных</a></label>
+					</div>
+				</div>
+				<button class="submit">Зарегистрироваться</button>
+				<a href="#" id="getLoginWindowRegistrationForm">Уже есть аккаунт?</a>
+			</form>
 		</div>
 	</div>
 
@@ -44,7 +100,7 @@
 				<div class="logo_wrap"><a href="index.html"><img src="img/logo.jpg" alt="DSS"></a></div>
 				<div class="phone_wrap"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:88000000000">8 (800) 800 00 00</a></div>
 				<div class="adress_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Краснодар, ул.Твардовского, д.156 оф.119</span></div>
-				<div class="login_wrap"><i class="fa fa-key" aria-hidden="true"></i><a href="#">Вход</a> / <a href="#">Регистрация</a></div>
+				<div class="login_wrap"><i class="fa fa-key" aria-hidden="true"></i><a href="#" id="popupLoginTrigger">Вход</a> / <a href="#" id="popupRegistrationTrigger">Регистрация</a></div>
 			</div>
 		</div>
 		<div class="navbar">
@@ -72,7 +128,7 @@
 				<h1 class="title">Успешные люди <br>не работают. Работают <br>их деньги. 24/7. <br>Круглый год.</h1>
 				<div class="divider"></div>
 				<p>Бизнес, не требующий Вашего <br>личного участия</p>
-				<span data-target="#videoWrap" onClick="openPopup()"><i class="fa fa-play" aria-hidden="true"></i>Смотреть видео</span>
+				<span data-target="#videoWrap" id="videoPopup"><i class="fa fa-play" aria-hidden="true"></i>Смотреть видео</span>
 			</div>
 		</section>
 		<section class="benefits">

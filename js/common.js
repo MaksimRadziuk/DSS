@@ -13,6 +13,8 @@ $(document).ready(function(){
 	$('.popup .close').click(function(){
 		$(this).closest('.popup').hide();
 		$('#popup_background').hide();
+		let reloadVideo = $('.modal-video').attr("src");
+		$('.modal-video').attr('src', reloadVideo);
 	})
 	$('#self_trade-button').click(function(){
 		$(this).addClass('active');
@@ -59,15 +61,24 @@ $(document).ready(function(){
 	clock.start();
 
 
-	/*function openPopup (){
-		let getId = $(this).attr('data-target');
-		$(getId).show();
-		$('.popup_background').show();
-	}*/
-	$('.firstScreen span').click(function(){
-		let getId = $(this).attr('data-target');
-		alert(getId);
-		$('{$getId}').show();
-		$('.popup_background').show();
+	$('#videoPopup').click(function(){
+		$('#videoWrap').show();
+		$('#popup_background').show();
+	})
+	$('#popupLoginTrigger').click(function(){
+		$('#loginWindow').show();
+		$('#popup_background').show();
+	})
+	$('#getRegistrationLoginWindow').click(function(){
+		$('#loginWindow').hide();
+		$('#registration').show();
+	})
+	$('#popupRegistrationTrigger').click(function(){
+		$('#registration').show();
+		$('#popup_background').show();
+	})
+	$('#getLoginWindowRegistrationForm').click(function(){
+		$('#registration').hide();
+		$('#loginWindow').show();
 	})
 })

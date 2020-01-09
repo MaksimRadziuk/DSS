@@ -52,7 +52,7 @@ h2 {
 	background-color: rgba(0,0,0,0.5);
 	width: 100%;
 	height: 100%;
-	display: none;
+	/* display: none; */
 }
 .popup {
 	position: fixed;
@@ -110,6 +110,142 @@ h2 {
 .popup_content {
 	padding: 50px 40px;
 }
+.popup_content .video_wrap {
+	width: 100%;
+	height: 100%;
+}
+.popup_content .video_wrap iframe,
+.popup_content .video_wrap video {
+	width: 100%;
+	height: 30vw;
+}
+#loginWindow {
+	width: 570px;
+}
+.popup_content form.login_form {
+	width: 100%;
+}
+.popup_content form.login_form input {
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	border:1px solid #d4d4d4;
+	border-radius: 3px;
+	display: block;
+	margin-bottom: 40px;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.popup_content form.login_form input:placeholder {
+	color: #d4d4d4;
+}
+.popup_content form.login_form input[type='checkbox'] {
+	display: none;
+}
+.popup_content button.submit {
+	display: block;
+	margin: 50px auto;
+	border: none;
+	background-color: #d3e554;
+	height: 65px;
+	padding: 0 40px;
+	border-radius: 33px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.popup_content form.login_form button.submit:focus {
+	outline: none;
+}
+.popup_content form.login_form label {
+	position: relative;
+	padding-left: 60px;
+	font-size: 16px;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 50px;
+}
+.popup_content form.login_form label:before {
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	border:1px solid #d4d4d4;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	left: 0;
+	top: -10px;
+}
+.popup_content form.login_form input[type='checkbox']:checked + label:before{
+	background-image: url(../img/checked-blue.png);
+}
+.popup_content form.login_form a {
+	display: block;
+	font-size: 16px;
+	color: #459ccc;
+	margin-bottom: 15px;
+}
+.popup_content form.login_form a:last-child {
+	margin-bottom: 0;
+}
+#registration {
+	display: block;
+	max-width: 910px;
+}
+#registration .input_wrapper {
+	display: grid;
+	grid-template-rows: 50px 50px 50px 100px;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+}
+#registration .select_wrap	{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#registration .select_wrap select {
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	border:1px solid #d4d4d4;
+	border-radius: 3px;
+	font-size: 16px;
+	padding-left: 20px;
+}
+#registration .select_wrap .select_item {
+	width: 70px;
+	height: 48px;
+	background-image: url(../img/select_item-arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	border-radius: 0 3px 3px 0;
+	background-color: #ffffff;
+	pointer-events: none;
+}
+#registration .captcha {
+	background-color: #d4d4d4;
+	border-radius: 3px;
+}
+#registration label {
+	padding-top: 10px;
+}
+#registration label a {
+	display: inline;
+}
+#registration label:before {
+	top: 0;
+}
+#registration a#getLoginWindowRegistrationForm {
+	text-align: center;
+}
+
+
 
 .topbar {
 	width: 100%;
@@ -268,6 +404,7 @@ h2 {
 	font-weight: 600;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 .firstScreen span:hover {
 	background-color: #b5ca1f;
