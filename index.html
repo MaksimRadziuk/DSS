@@ -25,6 +25,19 @@
 
 <body>
 
+	<div id="popup_background"></div>
+	<div class="popup" id="videoWrap">
+		<div class="popup_header">
+			<div class="title">Разница методов</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="video_wrap"></div>
+		</div>
+	</div>
+
 	<header>
 		<div class="topbar">
 			<div class="container">
@@ -59,7 +72,7 @@
 				<h1 class="title">Успешные люди <br>не работают. Работают <br>их деньги. 24/7. <br>Круглый год.</h1>
 				<div class="divider"></div>
 				<p>Бизнес, не требующий Вашего <br>личного участия</p>
-				<a href=""><i class="fa fa-play" aria-hidden="true"></i>Смотреть видео</a>
+				<span data-target="#videoWrap" onClick="openPopup()"><i class="fa fa-play" aria-hidden="true"></i>Смотреть видео</span>
 			</div>
 		</section>
 		<section class="benefits">
