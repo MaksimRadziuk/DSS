@@ -38,6 +38,17 @@ $(document).ready(function(){
   		dots:true,
   		arrows:true
 	})
+	
+
+	if ($(window).width()<961) {
+		$('.videos_slider-wrap').slick('unslick');
+	}
+
+	$(window).resize(function(){
+		if ($(window).width()<961) {
+			$('.videos_slider-wrap').slick('unslick');
+		}
+	})
 
 
 	$('section.test button').click(function(){
