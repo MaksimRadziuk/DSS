@@ -16,6 +16,12 @@ $(document).ready(function(){
 		let reloadVideo = $('.modal-video').attr("src");
 		$('.modal-video').attr('src', reloadVideo);
 	})
+	$('#mobileMenuTrigger').click(function(){
+		$('#mobileMenu').toggleClass('active');
+	})
+	$('#mobileMenu .close').click(function(){
+		$('#mobileMenu').toggleClass('active');
+	})
 	$('#self_trade-button').click(function(){
 		$(this).addClass('active');
 		$('#auto_trade-button').removeClass('active');
