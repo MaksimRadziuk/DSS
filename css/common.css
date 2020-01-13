@@ -279,6 +279,7 @@ h2 {
 	transform: none;
 	padding-bottom: 20px;
 	transition: all 0.6s ease;
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.1);
 }
 #mobileMenu.active {
 	left: 0;
@@ -468,6 +469,85 @@ h2 {
 	width: 100%;
 }
 
+
+.breadcrumbs {
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.breadcrumbs ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.breadcrumbs ul li {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.breadcrumbs ul li a{
+	font-size: 14px;
+	color: #232323;
+}
+.breadcrumbs ul li a:hover {
+	text-decoration: underline;
+}
+.breadcrumbs ul li span {
+	display: inline-block;
+	margin:0 20px;
+	font-size: 8px;
+	color: #a7a7a7;
+}
+.breadcrumbs ul li:last-child a{
+	pointer-events: none;
+	color: #a7a7a7;
+}
+.inserted_block {
+	background-color: #d3e553;
+	height: 120px;
+}
+.inserted_block .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.inserted_block .title {
+	font-size: 28px;
+	font-weight: 700;
+	color: #232323;
+}
+.inserted_block p {
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.inserted_block a {
+	display: block;
+	width: 260px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #232323;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	line-height: 60px;
+}
+.inserted_block .arrows {
+	height: 100%;
+}
+.inserted_block .arrows img {
+	height: 100%;
+	width: auto;
+	opacity: 0.2;
+}
+
+
+
 footer {
 	width: 100%;
 	background-color: #232323;
@@ -555,6 +635,22 @@ footer .links a:last-child {
 	.logo_wrap>a {
 		height: 90px;
 	}
+	.inserted_block {
+		height: 90px;
+	}
+	.inserted_block a {
+		width: 200px;
+		height: 50px;
+		border-radius: 25px;
+		font-size: 16px;
+		line-height: 50px;
+	}
+	.inserted_block .title {
+		font-size: 24px;
+	}
+	.inserted_block p {
+		font-size: 20px;
+	}
 	footer {
 		height: auto;
 		padding: 20px 0;
@@ -622,6 +718,35 @@ footer .links a:last-child {
 	}
 	#mobileMenu {
 		display: block;
+	}
+	.inserted_block .arrows img {
+		display: none;
+	}
+	.inserted_block {
+		height: auto;
+	}
+	.inserted_block .container {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 25px 20px;
+	}
+	.inserted_block p {
+		margin-bottom: 20px;
+	}
+}
+@media all and (max-width: 768px) {
+	.breadcrumbs {
+		display: none;
+	}
+}
+ 
+@media all and (max-width: 550px) {
+	.inserted_block p {
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.inserted_block .title {
+		font-size: 16px;
 	}
 }
 @media all and (max-width: 500px) {

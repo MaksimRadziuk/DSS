@@ -98,4 +98,15 @@ $(document).ready(function(){
 		$('#registration').hide();
 		$('#loginWindow').show();
 	})
+
+
+
+	$('.answer_trigger').click(function(){
+		$(this).siblings('p').toggleClass('active');
+		$(this).children('span').toggleClass('active');
+	})
+	$('.question').click(function(){
+		$(this).siblings('.answer').toggle();
+	})
+
 })
