@@ -503,7 +503,7 @@ header {
 .breadcrumbs ul li span {
 	display: inline-block;
 	margin:0 20px;
-	font-size: 8px;
+	font-size: 10px;
 	color: #a7a7a7;
 }
 .breadcrumbs ul li:last-child a{
@@ -832,6 +832,9 @@ footer .links a:last-child {
 		display: inline-block;
 		font-size: 12px;
 		margin-right: 10px;
+	}
+	.container {
+		padding: 0 10px;
 	}
 }
 @media all and (max-height: 880px) {
