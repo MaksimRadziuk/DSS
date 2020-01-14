@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+
+	<title>Blog</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="libs/FlipClock-master/compiled/flipclock.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/blog.css">
+
+
+</head>
+
+<body>
+
+	<div id="popup_background"></div>
+	<div class="popup" id="videoWrap">
+		<div class="popup_header">
+			<div class="title">Разница методов</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="video_wrap">
+				<iframe class="modal-video" src="https://www.youtube.com/embed/u6LvZz6lBQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="loginWindow">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<input type="text" placeholder="Имя пользователя">
+				<input type="text" placeholder="Пароль">
+				<button class="submit">Войти</button>
+				<input type="checkbox" id="rememberMe">
+				<label for="rememberMe">Запомнить меня</label>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" id="getRegistrationLoginWindow">Еще не пользователь DSS? Зарегистрируйтесь</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="registration">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<div class="input_wrapper">
+					<input type="text" placeholder="Имя пользователя">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Реферальная ссылка">
+					<input type="text" placeholder="Подтвердите пароль">
+					<input type="text" placeholder="Введите ваш email">
+					<div class="select_wrap">
+						<select name="location" id="">
+							<option value="rus">Россия</option>
+							<option value="by">Беларусь</option>
+							<option value="ua">Украина</option>
+							<option value="kz">Казахстан</option>
+							<option value="chn">Китай</option>
+						</select>
+						<div class="select_item"></div>
+					</div>
+					<div class="captcha"></div>
+					<div class="checkbox_wrap">
+						<input type="checkbox" id="agreeRegistrationForm">
+						<label for="agreeRegistrationForm">Я согласен с <a href="#">правилами сервиса</a>, <a href="#">агентским договором</a> и даю свое согласие на <a href="#">обработку персональных данных</a></label>
+					</div>
+				</div>
+				<button class="submit">Зарегистрироваться</button>
+				<a href="#" id="getLoginWindowRegistrationForm">Уже есть аккаунт?</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="levels">
+		<div class="popup_header">
+			<div class="title">Уровни</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="img_wrap">
+				<img src="img/infographic_img.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="mobileMenu">
+		<div class="close">
+			<span></span><span></span>
+		</div>
+		<ul>
+			<li><a href="">Продукты<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">Партнерам<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">Преимущества<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">FAQ<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">Розыгрыши<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">Кейсы<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">О компании<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">Блог<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="">Контакты<img src="img/double_arrows.jpg" alt=""></a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="topbar">
+			<div class="container">
+				<div class="mobile_hamburger" id="mobileMenuTrigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="logo_wrap"><a href="index.html"><img src="img/logo.jpg" alt="DSS"></a></div>
+				<div class="phone_wrap"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:88000000000">8 (800) 800 00 00</a></div>
+				<div class="adress_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Краснодар, ул.Твардовского, д.156 оф.119</span></div>
+				<div class="login_wrap"><i class="fa fa-key" aria-hidden="true"></i><a href="#" id="popupLoginTrigger">Вход / </a><a href="#" id="popupRegistrationTrigger">Регистрация</a></div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="logo_wrap"></div>
+				<ul class="navigation">
+					<li><a href="product.html">Продукты</a></li>
+					<li><a href="partner.html">Партнерам</a></li>
+					<li><a href="advantage.html">Преимущества</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="action.html">Розыгрыши</a></li>
+					<li><a href="case.html">Кейсы</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</header>
+
+	
+	<main class="blog_page">
+		<section class="content_part">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><span> > </span></li>
+						<li><a href="#">Блог</a></li>
+					</ul>
+				</div>
+				<h1>Блог</h1>
+				<div class="tabs_wrap">
+					<div class="tab active" id="blogNews">Новости</div>
+					<div class="tab" id="blogArticle">Статьи</div>
+					<div class="tab" id="blogEvents">Мероприятия</div>
+				</div>
+				<div class="blog_wrap active" id="newsWrap">
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-1.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-2.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-3.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-4.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+				</div>
+				<div class="blog_wrap" id="articleWrap">
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-3.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-1.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-2.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-4.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-1.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-2.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+				</div>
+				<div class="blog_wrap" id="eventsWrap">
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-3.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-4.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-1.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-2.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-3.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-4.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-1.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+					<div class="blog_block">
+						<div class="img_wrap">
+							<img src="img/bcg_blog-2.jpg" alt="">
+						</div>
+						<div class="date">07.12.2019</div>
+						<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident fugiat, cum dolore nobis. Minima exercitationem, ducimus dolorum hic debitis facere vitae! Maxime obcaecati necessitatibus ex minus totam ipsum incidunt.</p>
+						<a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>подробнее</a>
+					</div>
+				</div>
+				<div class="pagination">
+					<ul>
+						<li class="slide_button prev"><img src="img/slider_arrow.png" alt=""></li>
+						<li>1</li>
+						<li class="active">2</li>
+						<li>3</li>
+						<li>4</li>
+						<li class="slide_button next"><img src="img/slider_arrow.png" alt=""></li>
+					</ul>
+				</div>
+				<a href="#" class="more">Открыть еще</a>
+			</div>
+		</section>
+		<section class="inserted_block">
+			<div class="container">
+				<div class="text_part">
+					<div class="title">Инвестируют все. Успешны единицы.</div>
+					<p>Не отказывайте себе в удовольствии стать избранным уже сегодня</p>
+				</div>
+				<div class="arrows"><img src="img/arrows.png" alt=""></div>
+				<div class="link_wrap">
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo"><a href="index.html"><img src="img/footer_logo.png" alt=""></a></div>
+			<div class="copyright">&copy 2020 DSS South. Права защищены</div>
+			<div class="policies">
+				<a href="#">Политика конфиденциальности</a>
+				<a href="#">Использование cookies</a>
+				<a href="#">Пользовательское соглашение</a>
+			</div>
+			<div class="links">
+				<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="libs/slick/slick.js"></script>
+<script src="https://use.fontawesome.com/d9c416ed1a.js"></script>
+<script src="libs/FlipClock-master/compiled/flipclock.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
