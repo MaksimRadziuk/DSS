@@ -2002,10 +2002,7 @@ section.promo .right_part p.warning {
 		margin-bottom: 20px;
 	}
 }
-@media all and (max-height: 770px) {
-	#testStartScreen {
-		padding-top: 90px;
-	}
+@media all and (max-height: 850px) {
 	.test_slide.question {
 		overflow-y: scroll;
 	}
@@ -2036,6 +2033,11 @@ section.promo .right_part p.warning {
 		position: relative;
 		bottom: auto;
 		margin-top: 60px;
+	}
+}
+@media all and (max-height: 770px) {
+	#testStartScreen {
+		padding-top: 90px;
 	}
 	#testLastScreen {
 		padding-top: 60px;
