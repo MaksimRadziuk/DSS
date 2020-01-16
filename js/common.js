@@ -87,7 +87,7 @@ $(document).ready(function(){
 
 
 /*Попап триггеры*/
-	$('#videoPopup').click(function(){
+	$('.videoPopup').click(function(){
 		$('#videoWrap').show();
 		$('#popup_background').show();
 	})
@@ -143,6 +143,20 @@ $(document).ready(function(){
 		$(this).addClass("active");
 		$('.blog_wrap').removeClass('active');
 		$('#eventsWrap').addClass("active");
+	})
+
+
+/*Слайдер Кейс*/
+	$('.case_slider-wrap').slick({
+		slidesToShow: 1,
+  		slidesToScroll: 1,
+  		dots:true,
+  		arrows:true,
+  		infinite:false,
+  		adaptiveHeight: true
+	})
+	$('.mobile_slide-button').click(function(){
+		$('.case_slider-wrap').slick('slickNext');
 	})
 
 })
