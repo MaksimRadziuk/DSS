@@ -25,6 +25,9 @@ input:focus {
 main, section {
 	width: 100%;
 }
+p {
+	line-height: 1.4;
+}
 
 .container {
 	width: 100%;
