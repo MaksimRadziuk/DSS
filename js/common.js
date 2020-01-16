@@ -159,4 +159,29 @@ $(document).ready(function(){
 		$('.case_slider-wrap').slick('slickNext');
 	})
 
+/*Слайдер О нас*/
+	$('.employee_slider-wrap').slick({
+		slidesToShow: 3,
+  		slidesToScroll: 1,
+  		dots:true,
+  		arrows:true,
+  		infinite:false,
+  		responsive: [
+		    {
+		      breakpoint: 961,
+		      settings: {
+		        slidesToShow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 501,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
+	})
+
+
 })
