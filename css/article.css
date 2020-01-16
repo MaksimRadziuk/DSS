@@ -59,6 +59,9 @@ h1 {
 	width: 100%;
 	border:none;
 }
+.article_page table.mobile {
+	display: none;
+}
 .article_page table th {
 	background-color: #dbeff8;
 	font-size: 20px;
