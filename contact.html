@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+
+	<title>Contacts</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="libs/FlipClock-master/compiled/flipclock.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/contact.css">
+
+
+</head>
+
+<body>
+
+	<div id="popup_background"></div>
+	<div class="popup" id="videoWrap">
+		<div class="popup_header">
+			<div class="title">Разница методов</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="video_wrap">
+				<iframe class="modal-video" src="https://www.youtube.com/embed/u6LvZz6lBQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="loginWindow">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<input type="text" placeholder="Имя пользователя">
+				<input type="text" placeholder="Пароль">
+				<button class="submit">Войти</button>
+				<input type="checkbox" id="rememberMe">
+				<label for="rememberMe">Запомнить меня</label>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" id="getRegistrationLoginWindow">Еще не пользователь DSS? Зарегистрируйтесь</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="registration">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<div class="input_wrapper">
+					<input type="text" placeholder="Имя пользователя">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Реферальная ссылка">
+					<input type="text" placeholder="Подтвердите пароль">
+					<input type="text" placeholder="Введите ваш email">
+					<div class="select_wrap">
+						<select name="location" id="">
+							<option value="rus">Россия</option>
+							<option value="by">Беларусь</option>
+							<option value="ua">Украина</option>
+							<option value="kz">Казахстан</option>
+							<option value="chn">Китай</option>
+						</select>
+						<div class="select_item"></div>
+					</div>
+					<div class="captcha"></div>
+					<div class="checkbox_wrap">
+						<input type="checkbox" id="agreeRegistrationForm">
+						<label for="agreeRegistrationForm">Я согласен с <a href="#">правилами сервиса</a>, <a href="#">агентским договором</a> и даю свое согласие на <a href="#">обработку персональных данных</a></label>
+					</div>
+				</div>
+				<button class="submit">Зарегистрироваться</button>
+				<a href="#" id="getLoginWindowRegistrationForm">Уже есть аккаунт?</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="levels">
+		<div class="popup_header">
+			<div class="title">Уровни</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="img_wrap">
+				<img src="img/infographic_img.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="mobileMenu">
+		<div class="close">
+			<span></span><span></span>
+		</div>
+		<ul>
+			<li><a href="product.html">Продукты<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="partner.html">Партнерам<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="advantage.html">Преимущества<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="faq.html">FAQ<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="action.html">Розыгрыши<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="case.html">Кейсы<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="about.html">О компании<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="blog.html">Блог<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="contact.html">Контакты<img src="img/double_arrows.jpg" alt=""></a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="topbar">
+			<div class="container">
+				<div class="mobile_hamburger" id="mobileMenuTrigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="logo_wrap"><a href="index.html"><img src="img/logo.jpg" alt="DSS"></a></div>
+				<div class="phone_wrap"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:88000000000">8 (800) 800 00 00</a></div>
+				<div class="adress_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Краснодар, ул.Твардовского, д.156 оф.119</span></div>
+				<div class="login_wrap"><i class="fa fa-key" aria-hidden="true"></i><a href="#" id="popupLoginTrigger">Вход / </a><a href="#" id="popupRegistrationTrigger">Регистрация</a></div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="logo_wrap"></div>
+				<ul class="navigation">
+					<li><a href="product.html">Продукты</a></li>
+					<li><a href="partner.html">Партнерам</a></li>
+					<li><a href="advantage.html">Преимущества</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="action.html">Розыгрыши</a></li>
+					<li><a href="case.html">Кейсы</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</header>
+
+	
+	<main class="blog_page">
+		<section class="content_part">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><span> > </span></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<h1>Контакты</h1>
+				<div class="contacts_wrap">
+					<div class="info_wrap">
+						<h2>Контактная информация</h2>
+						<div class="info_block adress"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Краснодар, ул.Твардовского, д.156 оф.119</span></div>
+						<div class="info_block phone"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:88000000000">8 (800) 800 00 00</a></div>
+						<div class="info_block mail"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@dsssouth.gmail.com">info@dsssouth.gmail.com</a></div>
+						<div class="requisites">
+							<div class="sub_title">Реквизиты</div>
+							<span>6546546546544684640</span>
+							<span>Банк ЗАО "Открытие"</span>
+							<span>044554855</span>
+							<span>3015135165135468435</span>
+						</div>
+					</div>
+					<div class="feedback_form">
+						<div class="title">Возникли вопросы? Напишите нам</div>
+						<form>
+							<div class="input_row">
+								<input type="text" placeholder="Ваше имя">
+								<input type="text" placeholder="Номер телефона:">
+							</div>
+							<div class="input_row">
+								<textarea placeholder="Сообщение"></textarea>
+							</div>
+							<div class="checkbox_wrap">
+								<input type="checkbox" id="policyFaq">
+								<label for="policyFaq">Я согласен с <a href="#">правилами сервиса </a>, <a href="#"> агентским договором </a> и даю свое согласие на <a href="#"> обработку персональных данных </a></label>
+							</div>
+							<button class="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+				<div class="map_wrap">
+					<h2>Как нас найти</h2>
+					<div class="map_wrapper">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c748a38e87c238a134b4aa6a7b131ec698f75c4840c461769db178393a5661f&amp;source=constructor" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="inserted_block">
+			<div class="container">
+				<div class="text_part">
+					<div class="title">Инвестируют все. Успешны единицы.</div>
+					<p>Не отказывайте себе в удовольствии стать избранным уже сегодня</p>
+				</div>
+				<div class="arrows"><img src="img/arrows.png" alt=""></div>
+				<div class="link_wrap">
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo"><a href="index.html"><img src="img/footer_logo.png" alt=""></a></div>
+			<div class="copyright">&copy 2020 DSS South. Права защищены</div>
+			<div class="policies">
+				<a href="#">Политика конфиденциальности</a>
+				<a href="#">Использование cookies</a>
+				<a href="#">Пользовательское соглашение</a>
+			</div>
+			<div class="links">
+				<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="libs/slick/slick.js"></script>
+<script src="https://use.fontawesome.com/d9c416ed1a.js"></script>
+<script src="libs/FlipClock-master/compiled/flipclock.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
