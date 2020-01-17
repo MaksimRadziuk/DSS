@@ -1,0 +1,143 @@
+h1 {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 44px;
+	font-weight: 700;
+}
+
+.advantage_page table {
+	width: 100%;
+	border:none;
+	margin-bottom: 50px;
+}
+.advantage_page table.mobile {
+	display: none;
+	border-bottom: 1px solid #e0e0e0;
+}
+.advantage_page table th {
+	background-color: #dbeff8;
+	padding:5px 15px;
+	text-align: left;
+	height: 55px;
+	color: #4691bb;
+	border:1px solid #dbeff8;
+	font-size: 16px;
+	font-weight: 400;
+}
+.advantage_page table th:last-child {
+	background-color: #d3e553;
+	color:#232323;
+	border:1px solid #d3e553;
+	width: 130px;
+}
+.advantage_page table td {
+	padding:5px 15px;
+	text-align: left;
+	color:#232323;
+	font-size: 18px;
+	font-weight: 100;
+	border-bottom:1px solid #e0e0e0;
+	border-right:1px solid #e0e0e0;
+}
+.advantage_page table td:first-child {
+	background-color: #f7f7f7;
+	border-left:none;
+}
+.advantage_page table td:last-child {
+	border-right:none;
+}
+
+.advantage_page .content_part p {
+	margin-top: 0;
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight: 100;
+}
+.advantage_page .content_part p:last-child {
+	margin-bottom: 80px;
+}
+
+
+@media all and (max-width: 1200px) {
+	h1 {
+		font-size: 36px;
+	}
+	.advantage_page table td,.advantage_page table th {
+		font-size: 12px;
+		padding: 5px 7px;
+	}
+	.advantage_page table th:last-child {
+		width: 90px;
+	}
+	.advantage_page .content_part p {
+		font-size: 16px;
+	}
+	.advantage_page .content_part p:last-child {
+		margin-bottom: 50px;
+	}
+}
+@media all and (max-width: 768px) {
+	h1 {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.advantage_page table.mobile {
+		display: table !important;
+		margin-bottom: 30px;
+	}
+	.advantage_page table.desktop {
+		display: none;
+	} 
+	.advantage_page table th:last-child {
+		background-color: #dbeff8;
+		color: #4691bb;
+		height: 50px;
+		font-size: 14px;
+		border-color: #dbeff8;
+		padding-left: 15px;
+	}
+	.advantage_page table th.green {
+		background-color: #d3e553;
+		color: #232323;
+		border:none;
+	}
+	.advantage_page table td {
+		padding: 10px 15px;
+		background-color: #ffffff;
+		border:none;
+	}
+	.advantage_page table td:first-child {
+		background-color: #ffffff;
+	}
+	.advantage_page .content_part table td p {
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-weight: 100;
+	}
+	.advantage_page .content_part table td p.title {
+		font-weight: 400;
+	}
+	.advantage_page .content_part table p:last-child {
+		margin-bottom: 0;
+	}
+	.advantage_page .content_part p:last-child {
+		margin-bottom: 30px;
+	}
+	.advantage_page .content_part p {
+		margin-bottom: 20px;
+	}
+}	
+@media all and (max-width: 640px) {
+	h1 {
+		font-size: 28px;
+	}
+}
+@media all and (max-width: 560px) {
+	h1 {
+		font-size: 22px;
+		padding: 0 10px;
+	}
+	.advantage_page .content_part p {
+		font-size: 14px;
+	}
+}
