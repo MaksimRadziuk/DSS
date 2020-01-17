@@ -1,0 +1,344 @@
+h1 {
+	margin-top: 0;
+	margin-bottom: 55px;
+	font-size: 44px;
+	font-weight: 700;
+}
+
+.profile_wrap {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+.profile_wrap .img_block {
+	width: 330px;
+}
+.profile_wrap .img_wrap	{
+	width: 100%;
+	height: 330px;
+	border-radius: 50%;
+	overflow:hidden;
+	margin-bottom: 40px;
+}
+.profile_wrap .img_wrap	img {
+	width: 100%;
+}
+.profile_wrap .img_block button {
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #232323;
+	height: 30px;
+	border-radius: 15px;
+	margin: 0 auto;
+	border:none;
+	display: block;
+}
+.profile_wrap .input_block {
+	width: calc(100% - 330px);
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.profile_wrap .input_row {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+	width: 100%;
+}
+.profile_wrap .input_row .title {
+	text-align: right;
+	font-size: 18px;
+	font-weight: 100;
+	width: 300px;
+	padding-right: 35px;
+}
+.profile_wrap .input_row input {
+	width: calc(100% - 300px);
+	height: 50px;
+	border:1px solid #d4d4d4;
+	background-color: transparent;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.profile_wrap .input_row .sum_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.profile_wrap .input_row .sum_wrap .number {
+	font-size: 24px;
+	font-weight: 700;
+	color: #bfd33c;
+	margin-right: 40px;
+}
+.profile_wrap .input_row .sum_wrap .number:after {
+	content: '\24';
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #bfd33c;
+}
+.profile_wrap .input_row .sum_wrap button {
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #232323;
+	height: 30px;
+	border-radius: 15px;
+	margin: 0 auto;
+	border:none;
+	display: block;
+}
+.profile_wrap .input_row .links_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.profile_wrap .input_row .links_wrap a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	border:2px solid #449ccc;
+	border-radius: 50%;
+	font-size: 12px;
+	color: #449ccc;
+	margin-right: 10px;
+}
+
+.mailing {
+	width: 100%;
+	background-color: #469ccd;
+	padding: 50px 0 60px 0;
+}
+.mailing h2 {
+	margin-top: 0;
+	text-align: center;
+	color: #ffffff;
+	font-size: 28px;
+	margin-bottom: 50px;
+}
+.mailing .form_wrap	{
+	margin: 0 auto;
+	max-width: 700px;
+	width: 100%;
+}
+.mailing form {
+	width: 100%;
+}
+.mailing form input[type="mail"] {
+	width: 100%;
+	height: 50px;
+	background-color: #ffffff;
+	border-radius: 25px;
+	font-size: 16px;
+	padding-left: 20px;
+	border:none;
+	margin-bottom: 50px;
+}
+.mailing .checkbox_wrap {
+	width: 100%;
+}
+.mailing form button.submit {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	background-color: #232323;
+	height: 65px;
+	padding: 0 40px;
+	border-radius: 33px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #ffffff;
+}
+.mailing form button.submit:focus {
+	outline: none;
+}
+.mailing form label {
+	position: relative;
+	padding-left: 60px;
+	font-size: 16px;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 50px;
+	color: #ffffff;
+}
+.mailing form label:before {
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	background-color: #ffffff;
+	left: 0;
+	top: -10px;
+}
+.mailing form input[type='checkbox'] {
+	display: none;
+}
+.mailing form input[type='checkbox']:checked + label:before{
+	background-image: url(../img/checked-blue.png);
+}
+.mailing form a {
+	display: inline;
+	font-size: 16px;
+	color: #0e608f;
+}
+
+.save {
+	height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.save button.save_changes {
+	display: block;
+	border: none;
+	background-color: #d3e553;
+	height: 65px;
+	padding: 0 40px;
+	border-radius: 33px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #232323;
+}
+
+
+@media all and (max-width: 1200px) {
+	h1 {
+		font-size: 36px;
+	}
+	.profile_wrap .img_block {
+		width: 230px;
+	}
+	.profile_wrap .img_wrap {
+		height: 230px;
+	}
+	.profile_wrap .input_block {
+		width: calc(100% - 230px);
+	}
+	.profile_wrap .input_row {
+		margin-bottom: 30px;
+	}
+	.profile_wrap .input_row .title {
+		font-size: 16px;
+		width: 230px;
+	}
+	.profile_wrap .input_row input {
+		width: calc(100% - 230px);
+	}
+}
+@media all and (max-width: 960px) {
+	.profile_wrap {
+		padding-top: 0;
+	}
+	.profile_wrap .input_row .title {
+		font-size: 16px;
+		width: 195px;
+	}
+	.profile_wrap .input_row input {
+		width: calc(100% - 195px);
+	}
+}
+@media all and (max-width: 768px) {
+	h1 {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}	
+@media all and (max-width: 740px) {
+	.profile_wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.profile_wrap .img_block {
+		margin-bottom: 40px;
+	}
+	.profile_wrap .input_block {
+		width: 100%;
+	}
+	.mailing {
+		padding: 50px 10px;
+	}
+}
+@media all and (max-width: 640px) {
+	h1 {
+		font-size: 28px;
+	}
+}
+@media all and (max-width: 560px) {
+	h1 {
+		font-size: 22px;
+		padding: 0 10px;
+	}
+	.profile_wrap .input_row {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin-bottom: 30px;
+	}
+	.profile_wrap .input_row .title {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.profile_wrap .input_row input {
+		width: 100%;
+		height: 40px;
+		font-size: 14px;
+	}
+	.profile_wrap {
+		padding-bottom: 20px;
+	}
+	.mailing form label:before {
+		width: 25px;
+		height: 25px;
+		top: 0;
+	}
+	.mailing form label {
+		padding-left: 40px;
+		margin-bottom: 30px;
+	}
+	.mailing h2 {
+		font-size: 22px;
+		margin-bottom: 30px;
+		letter-spacing: normal;
+	}
+	.save {
+		height: 130px;
+	}
+	.save button.save_changes,.mailing form button.submit {
+		height: 45px;
+		border-radius: 23px;
+		font-size: 18px;
+		padding: 0 20px;
+	}
+	.mailing form input[type="mail"] {
+		height: 40px;
+		border-radius: 20px;
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+}
+@media all and (max-width: 420px) {
+	h2 {
+		font-size: 18px;
+	}
+	.mailing form label {
+		font-size: 14px;
+	}
+	.profile_wrap .input_row .title {
+		margin-bottom: 15px;
+	}
+}
