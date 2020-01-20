@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+
+	<title>Advantages</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="libs/FlipClock-master/compiled/flipclock.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/advantage.css">
+
+
+</head>
+
+<body>
+
+	<div id="popup_background"></div>
+	<div class="popup" id="videoWrap">
+		<div class="popup_header">
+			<div class="title">Разница методов</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="video_wrap">
+				<iframe class="modal-video" src="https://www.youtube.com/embed/u6LvZz6lBQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="loginWindow">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<input type="text" placeholder="Имя пользователя">
+				<input type="text" placeholder="Пароль">
+				<button class="submit">Войти</button>
+				<input type="checkbox" id="rememberMe">
+				<label for="rememberMe">Запомнить меня</label>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" id="getRegistrationLoginWindow">Еще не пользователь DSS? Зарегистрируйтесь</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="registration">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<div class="input_wrapper">
+					<input type="text" placeholder="Имя пользователя">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Реферальная ссылка">
+					<input type="text" placeholder="Подтвердите пароль">
+					<input type="text" placeholder="Введите ваш email">
+					<div class="select_wrap">
+						<select name="location" id="">
+							<option value="rus">Россия</option>
+							<option value="by">Беларусь</option>
+							<option value="ua">Украина</option>
+							<option value="kz">Казахстан</option>
+							<option value="chn">Китай</option>
+						</select>
+						<div class="select_item"></div>
+					</div>
+					<div class="captcha"></div>
+					<div class="checkbox_wrap">
+						<input type="checkbox" id="agreeRegistrationForm">
+						<label for="agreeRegistrationForm">Я согласен с <a href="#">правилами сервиса</a>, <a href="#">агентским договором</a> и даю свое согласие на <a href="#">обработку персональных данных</a></label>
+					</div>
+				</div>
+				<button class="submit">Зарегистрироваться</button>
+				<a href="#" id="getLoginWindowRegistrationForm">Уже есть аккаунт?</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="levels">
+		<div class="popup_header">
+			<div class="title">Уровни</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="img_wrap">
+				<img src="img/infographic_img.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="mobileMenu">
+		<div class="close">
+			<span></span><span></span>
+		</div>
+		<ul>
+			<li><a href="product.html">Продукты<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="partner.html">Партнерам<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="advantage.html">Преимущества<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="faq.html">FAQ<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="action.html">Розыгрыши<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="case.html">Кейсы<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="about.html">О компании<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="blog.html">Блог<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="contact.html">Контакты<img src="img/double_arrows.jpg" alt=""></a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="topbar">
+			<div class="container">
+				<div class="mobile_hamburger" id="mobileMenuTrigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="logo_wrap"><a href="index.html"><img src="img/logo.jpg" alt="DSS"></a></div>
+				<div class="phone_wrap"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:88000000000">8 (800) 800 00 00</a></div>
+				<div class="adress_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Краснодар, ул.Твардовского, д.156 оф.119</span></div>
+				<div class="login_wrap"><i class="fa fa-key" aria-hidden="true"></i><a href="#" id="popupLoginTrigger">Вход / </a><a href="#" id="popupRegistrationTrigger">Регистрация</a></div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="logo_wrap"></div>
+				<ul class="navigation">
+					<li><a href="product.html">Продукты</a></li>
+					<li><a href="partner.html">Партнерам</a></li>
+					<li><a href="advantage.html">Преимущества</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="action.html">Розыгрыши</a></li>
+					<li><a href="case.html">Кейсы</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</header>
+
+	
+	<main class="advantage_page">
+		<section class="content_part">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><span> > </span></li>
+						<li><a href="#">Преимущества</a></li>
+					</ul>
+				</div>
+				<h1>Преимущества</h1>
+				<table class="desktop" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Параметр</th>
+							<th>Недвижимость</th>
+							<th>Фондовый рынок</th>
+							<th>Бизнес</th>
+							<th>Драгоценные металлы</th>
+							<th>Предметы искусства</th>
+							<th>Саморазвитие</th>
+							<th>DSS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Доходность, % в год</td>
+							<td>Россия 4 - 5%, за рубежом 7-10%</td>
+							<td></td>
+							<td>Непредсказуема, зависит от типа бизнеса и навыков управленца</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>60%</td>
+						</tr>
+						<tr>
+							<td>Мин. сумма вложений</td>
+							<td>750 т.р.</td>
+							<td></td>
+							<td>Есть: деньгами либо временем, размер в зав-ти от бизнеса</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Риски</td>
+							<td>Недострой, ремонт</td>
+							<td></td>
+							<td>Всегда есть: уход в минус, кадровые, репутационные, налоги и т.д.</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Оперативность извлечения средств</td>
+							<td>После сдачи, раз в месяц</td>
+							<td></td>
+							<td>После окупаемости вложений</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Воможность масштабирования</td>
+							<td>Нет</td>
+							<td></td>
+							<td>Да</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Мобильность (i)</td>
+							<td>Нужна, либо должен быть управляющий</td>
+							<td></td>
+							<td>В завис-ти от типа бизнеса: удаленный или местный</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Вовлеченность</td>
+							<td>Да, либо должен быть управляющий</td>
+							<td>Да, либо должен быть управляющий</td>
+							<td>100%, если нет управляющего</td>
+							<td>Да, либо должен быть управляющий</td>
+							<td>Наличие спецзнаний</td>
+							<td>100%</td>
+							<td>100%, удаленно</td>
+						</tr>
+						<tr>
+							<td>Содержание</td>
+							<td>Да: ремонт, мебель, ЖКХ, налоги</td>
+							<td></td>
+							<td>Ежемесячные расходы: реклама, аренда и т.д.</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Час времени на настройку, потом 0%</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="mobile">
+					<thead>
+						<tr>
+							<th>Недвижимость</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="title">Доходность, % в год</p>
+								<p>Россия 4 - 5%, за рубежом 7-10%</p>
+								<p class="title">Мин. сумма вложений</p>
+								<p>750 т.р.</p>
+								<p class="title">Риски</p>
+								<p>Недострой, ремонт</p>
+								<p class="title">Оперативность извлечения средств</p>
+								<p>После сдачи, раз в месяц</p>
+								<p class="title">Воможность масштабирования</p>
+								<p>Нет</p>
+								<p class="title">Мобильность (i)</p>
+								<p>Нужна, либо должен быть управляющий</p>
+								<p class="title">Вовлеченность</p>
+								<p>Да, либо должен быть управляющий</p>
+								<p class="title">Содержание</p>
+								<p>Да: ремонт, мебель, ЖКХ, налоги</p>
+							</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th>Фондовый рынок</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="title">Вовлеченность</p>
+								<p>Да, либо должен быть управляющий</p>
+							</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th>Бизнес</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="title">Доходность, % в год</p>
+								<p>Непредсказуема, зависит от типа бизнеса и навыков управленца</p>
+								<p class="title">Мин. сумма вложений</p>
+								<p>Есть: деньгами либо временем, размер в зав-ти от бизнеса</p>
+								<p class="title">Риски</p>
+								<p>Всегда есть: уход в минус, кадровые, репутационные, налоги и т.д.</p>
+								<p class="title">Оперативность извлечения средств</p>
+								<p>После окупаемости вложений</p>
+								<p class="title">Воможность масштабирования</p>
+								<p>Да</p>
+								<p class="title">Мобильность (i)</p>
+								<p>В завис-ти от типа бизнеса: удаленный или местныйй</p>
+								<p class="title">Вовлеченность</p>
+								<p>100%, если нет управляющего</p>
+								<p class="title">Содержание</p>
+								<p>Ежемесячные расходы: реклама, аренда и т.д.</p>
+							</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th>Драгоценные металлы</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="title">Вовлеченность</p>
+								<p>Да, либо должен быть управляющий</p>
+							</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th>Предметы искусства</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="title">Вовлеченность</p>
+								<p>Наличие спецзнаний</p>
+							</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th>Саморазвитие</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="title">Вовлеченность</p>
+								<p>100%</p>
+							</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th class="green">DSS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="title">Доходность, % в год</p>
+								<p>60%</p>
+								<p class="title">Вовлеченность</p>
+								<p>100%, удаленно</p>
+								<p class="title">Содержание</p>
+								<p>Час на настройку, потом 0%</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quia neque tempore saepe praesentium, minima iste illum enim repellendus, minus labore amet possimus deleniti ipsa aperiam eum? Eos, eaque at.</b></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum repellendus exercitationem repudiandae necessitatibus saepe aliquid iste quibusdam, mollitia quasi numquam error ipsam voluptas ab tenetur atque consequuntur fugiat reprehenderit nobis. In, maiores odit porro eveniet praesentium veritatis assumenda nisi animi, sed? Eligendi laborum, rerum ea ipsa assumenda mollitia distinctio veniam quae corporis nesciunt quibusdam nostrum sed explicabo incidunt cupiditate, cum!</p>
+				<p>Aspernatur nihil velit rerum iste explicabo, laboriosam itaque impedit incidunt doloremque illo earum dicta dolorum, nulla molestiae numquam consequatur commodi, vel quo fuga, quaerat. Commodi eos porro ullam corrupti ipsam. Natus sequi quae voluptates ut nulla, quo necessitatibus quibusdam, dolorum id soluta tempora doloribus esse culpa ipsam deleniti nobis in vero expedita. Laudantium, blanditiis eum voluptas asperiores aspernatur natus fuga! Quos provident eaque officiis ipsa fuga tempore quam facilis adipisci iure deserunt qui tempora nostrum, aliquid aperiam magni eligendi debitis temporibus asperiores odit officia. Autem cum molestias voluptatibus quaerat numquam?</p>
+			</div>
+		</section>
+		<section class="inserted_block">
+			<div class="container">
+				<div class="text_part">
+					<div class="title">Инвестируют все. Успешны единицы.</div>
+					<p>Не отказывайте себе в удовольствии стать избранным уже сегодня</p>
+				</div>
+				<div class="arrows"><img src="img/arrows.png" alt=""></div>
+				<div class="link_wrap">
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo"><a href="index.html"><img src="img/footer_logo.png" alt=""></a></div>
+			<div class="copyright">&copy 2020 DSS South. Права защищены</div>
+			<div class="policies">
+				<a href="#">Политика конфиденциальности</a>
+				<a href="#">Использование cookies</a>
+				<a href="#">Пользовательское соглашение</a>
+			</div>
+			<div class="links">
+				<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="libs/slick/slick.js"></script>
+<script src="https://use.fontawesome.com/d9c416ed1a.js"></script>
+<script src="libs/FlipClock-master/compiled/flipclock.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
