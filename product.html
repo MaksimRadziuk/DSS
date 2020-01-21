@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+
+	<title>Продукты</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="libs/FlipClock-master/compiled/flipclock.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/product.css">
+
+
+</head>
+
+<body>
+
+	<div id="popup_background"></div>
+	<div class="popup" id="videoWrap">
+		<div class="popup_header">
+			<div class="title">Разница методов</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="video_wrap">
+				<iframe class="modal-video" src="https://www.youtube.com/embed/u6LvZz6lBQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="loginWindow">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<input type="text" placeholder="Имя пользователя">
+				<input type="text" placeholder="Пароль">
+				<button class="submit">Войти</button>
+				<input type="checkbox" id="rememberMe">
+				<label for="rememberMe">Запомнить меня</label>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" id="getRegistrationLoginWindow">Еще не пользователь DSS? Зарегистрируйтесь</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="registration">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<div class="input_wrapper">
+					<input type="text" placeholder="Имя пользователя">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Реферальная ссылка">
+					<input type="text" placeholder="Подтвердите пароль">
+					<input type="text" placeholder="Введите ваш email">
+					<div class="select_wrap">
+						<select name="location" id="">
+							<option value="rus">Россия</option>
+							<option value="by">Беларусь</option>
+							<option value="ua">Украина</option>
+							<option value="kz">Казахстан</option>
+							<option value="chn">Китай</option>
+						</select>
+						<div class="select_item"></div>
+					</div>
+					<div class="captcha"></div>
+					<div class="checkbox_wrap">
+						<input type="checkbox" id="agreeRegistrationForm">
+						<label for="agreeRegistrationForm">Я согласен с <a href="#">правилами сервиса</a>, <a href="#">агентским договором</a> и даю свое согласие на <a href="#">обработку персональных данных</a></label>
+					</div>
+				</div>
+				<button class="submit">Зарегистрироваться</button>
+				<a href="#" id="getLoginWindowRegistrationForm">Уже есть аккаунт?</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="levels">
+		<div class="popup_header">
+			<div class="title">Уровни</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="img_wrap">
+				<img src="img/infographic_img.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="mobileMenu">
+		<div class="close">
+			<span></span><span></span>
+		</div>
+		<ul>
+			<li><a href="product.html">Продукты<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="partner.html">Партнерам<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="advantage.html">Преимущества<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="faq.html">FAQ<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="action.html">Розыгрыши<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="case.html">Кейсы<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="about.html">О компании<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="blog.html">Блог<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="contact.html">Контакты<img src="img/double_arrows.jpg" alt=""></a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="topbar">
+			<div class="container">
+				<div class="mobile_hamburger" id="mobileMenuTrigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="logo_wrap"><a href="index.html"><img src="img/logo.jpg" alt="DSS"></a></div>
+				<div class="phone_wrap"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:88000000000">8 (800) 800 00 00</a></div>
+				<div class="adress_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Краснодар, ул.Твардовского, д.156 оф.119</span></div>
+				<div class="login_wrap"><i class="fa fa-key" aria-hidden="true"></i><a href="#" id="popupLoginTrigger">Вход / </a><a href="#" id="popupRegistrationTrigger">Регистрация</a></div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="logo_wrap"></div>
+				<ul class="navigation">
+					<li><a href="product.html">Продукты</a></li>
+					<li><a href="partner.html">Партнерам</a></li>
+					<li><a href="advantage.html">Преимущества</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="action.html">Розыгрыши</a></li>
+					<li><a href="case.html">Кейсы</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</header>
+
+	
+	<main class="product_page">
+		<section class="page_content">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><span> > </span></li>
+						<li><a href="#">Продукты</a></li>
+					</ul>
+				</div>
+				<h1>Продукты</h1>
+			</div>
+			<div class="product_wrap cryptobot">
+				<div class="container">
+					<div class="half"></div>
+					<div class="half">
+						<h2 class="product_name">Криптобот</h2>
+						<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quis, illum accusantium facere, nulla nemo quam quae labore, officia nam tempora mollitia tenetur id corporis voluptate ad sint dignissimos! Facilis.</span><span>Quas animi impedit pariatur autem eaque sint, reprehenderit ullam, ut optio ex repudiandae fugiat asperiores velit alias quidem tempora vero perferendis sed explicabo dignissimos nobis quasi quis modi iure. Accusamus.</span></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quam rerum consectetur, quidem vero dolorum rem perferendis voluptas ipsum nobis asperiores facilis, libero et molestiae voluptatem dignissimos labore fuga eum.</p>
+						<div class="product_sub-name">Линейка криптоботов</div>
+						<div class="type_wrap robots">
+							<span>Bitcoiner</span>
+							<span>Altcoiner-BTS</span>
+							<span>Altcoiner-USDT</span>
+							<span>Trendovic-BTC</span>
+							<span>Trendovic-USDT</span>
+						</div>
+						<div class="product_sub-name robot_types">Все роботы делятся на 2 типа:</div>
+						<div class="type_wrap robot_types">
+							<span>Приумножает Биткоин</span>
+							<span>Приумножает Доллар</span>
+						</div>
+						<button class="start">Начать использовать</button>
+						<div class="warning">Помните, что торговля криптовалют на рынке несет в себе финансовые риски</div>
+					</div>
+				</div>
+			</div>
+			<div class="product_wrap bracelet">
+				<div class="container">
+					<div class="half"></div>
+					<div class="half">
+						<h2 class="product_name">Криптобраслет Digital Smart Watch</h2>
+						<p class="title">Технические характеристики:</p>
+						<ul>
+							<li>Lorem ipsum dolor</li>
+							<li>Nam perspiciatis aperiam</li>
+							<li>impedit dicta quia aspernatur odio</li>
+							<li>vero possimus adipisci</li>
+							<li>architecto voluptates ipsam</li>
+							<li>maxime recusandae adipisci cupiditate</li>
+						</ul>
+						<p class="title">Функциональность:</p>
+						<ul>
+							<li>Lorem ipsum dolor</li>
+							<li>Nam perspiciatis aperiam</li>
+							<li>impedit dicta quia aspernatur odio</li>
+							<li>vero possimus adipisci</li>
+							<li>architecto voluptates ipsam</li>
+							<li>maxime recusandae adipisci cupiditate</li>
+						</ul>
+						<div class="product_sub-name">Линейка криптоботов</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cum laboriosam pariatur delectus quae soluta itaque nulla, ab, excepturi temporibus natus ex numquam nostrum architecto reprehenderit cumque, voluptate deserunt non!</p>
+						<p class="title">Пользователям доступны:</p>
+						<ul>
+							<li>Lorem ipsum dolor</li>
+							<li>Nam perspiciatis aperiam</li>
+							<li>impedit dicta quia aspernatur odio</li>
+							<li>vero possimus adipisci</li>
+							<li>architecto voluptates ipsam</li>
+							<li>maxime recusandae adipisci cupiditate</li>
+							<li>architecto voluptates ipsam</li>
+							<li>maxime recusandae adipisci cupiditate</li>
+						</ul>
+						<button class="start">Начать использовать</button>
+					</div>
+				</div>
+			</div>
+			<div class="product_wrap forex">
+				<div class="container">
+					<div class="half"></div>
+					<div class="half">
+						<h2 class="product_name">Форекс робот</h2>
+						<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quis, illum accusantium facere, nulla nemo quam quae labore, officia nam tempora mollitia tenetur id corporis voluptate ad sint dignissimos! Facilis.</span><span>Quas animi impedit pariatur autem eaque sint, reprehenderit ullam, ut optio ex repudiandae fugiat asperiores velit alias quidem tempora vero perferendis sed explicabo dignissimos nobis quasi quis modi iure. Accusamus.</span></p>
+						<div class="product_sub-name">Торговля ведется в автоматическом режиме на следующих валютных парах</div>
+						<div class="type_wrap robots">
+							<span>EUR/USD</span>
+							<span>USD/CHF</span>
+							<span>USD/JPY</span>
+							<span>USD/CAD</span>
+							<span>EUR/CHF</span>
+							<span>EUR/JPY</span>
+						</div>
+						<button class="start">Начать использовать</button>
+						<div class="warning">Помните, что торговля криптовалют на рынке несет в себе финансовые риски</div>
+					</div>
+				</div>
+			</div>
+			<div class="product_wrap avicenna">
+				<div class="container">
+					<div class="half"></div>
+					<div class="half">
+						<h2 class="product_name">Avicenna Digital Doctor</h2>
+						<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quis, illum accusantium facere, nulla nemo quam quae labore, officia nam tempora mollitia tenetur id corporis voluptate ad sint dignissimos! Facilis.</span></span></p>
+						<ul>
+							<li><span class="blue">Lorem ipsum dolor sit</span> amet, consectetur adipisicing elit. Voluptatum eligendi, ullam ut enim iure! Labore earum in dolorem quasi, sapiente consequatur perferendis, harum eveniet libero dolor amet, necessitatibus debitis officia!</li>
+							<li><span class="blue">Lorem ipsum dolor sit</span> amet, consectetur adipisicing elit. Voluptatum eligendi, ullam ut enim iure! Labore earum in dolorem quasi, sapiente consequatur perferendis, harum eveniet libero dolor amet, necessitatibus debitis officia!</li>
+							<li><span class="blue">Lorem ipsum dolor sit</span> amet, consectetur adipisicing elit. Voluptatum eligendi, ullam ut enim iure! Labore earum in dolorem quasi, sapiente consequatur perferendis, harum eveniet libero dolor amet, necessitatibus debitis officia!</li>
+							<li><span class="blue">Lorem ipsum dolor sit</span> amet, consectetur adipisicing elit. Voluptatum eligendi, ullam ut enim iure! Labore earum in dolorem quasi, sapiente consequatur perferendis, harum eveniet libero dolor amet, necessitatibus debitis officia!</li>
+						</ul>
+						<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam minus laboriosam, sapiente doloribus. Est aliquid sed tempore quo eveniet, repellendus minus commodi, repellat veniam iusto eligendi ducimus, recusandae facere fuga.</span><span>Dignissimos ut error assumenda nihil placeat distinctio doloribus. Officiis at, nostrum repellat deserunt nobis labore minus facilis, tempore illo quaerat, nam sed, neque alias corporis! Est nobis perferendis natus, possimus.</span></p>
+						<button class="start">Начать использовать</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="inserted_block">
+			<div class="container">
+				<div class="text_part">
+					<div class="title">Инвестируют все. Успешны единицы.</div>
+					<p>Не отказывайте себе в удовольствии стать избранным уже сегодня</p>
+				</div>
+				<div class="arrows"><img src="img/arrows.png" alt=""></div>
+				<div class="link_wrap">
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo"><a href="index.html"><img src="img/footer_logo.png" alt=""></a></div>
+			<div class="copyright">&copy 2020 DSS South. Права защищены</div>
+			<div class="policies">
+				<a href="#">Политика конфиденциальности</a>
+				<a href="#">Использование cookies</a>
+				<a href="#">Пользовательское соглашение</a>
+			</div>
+			<div class="links">
+				<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="libs/slick/slick.js"></script>
+<script src="https://use.fontawesome.com/d9c416ed1a.js"></script>
+<script src="libs/FlipClock-master/compiled/flipclock.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
