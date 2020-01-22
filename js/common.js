@@ -47,11 +47,19 @@ $(document).ready(function(){
 
 	if ($(window).width()<961) {
 		$('.videos_slider-wrap').slick('unslick');
+		$('.login_wrap').click(function(){
+			$('#loginWindow').show();
+			$('#popup_background').show();
+		})
 	}
 
 	$(window).resize(function(){
 		if ($(window).width()<961) {
 			$('.videos_slider-wrap').slick('unslick');
+			$('.login_wrap').click(function(){
+				$('#loginWindow').show();
+				$('#popup_background').show();
+			})
 		}
 		if ($(window).width()>960) {
 			$('.videos_slider-wrap').slick({

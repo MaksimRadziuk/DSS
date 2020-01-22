@@ -1265,7 +1265,7 @@ section.promo .right_part p.warning {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 100px 0;
+	padding: 100px 0 300px 0;
 }
 .nodoubts h2 {
 	width: 50%;
@@ -1574,7 +1574,7 @@ section.promo .right_part p.warning {
 	}
 	.nodoubts {
 		padding-top: 60px;
-		padding-bottom: 90px;
+		padding-bottom: 250px;
 	}
 	.divider {
 		margin: 40px 0;
@@ -1801,7 +1801,7 @@ section.promo .right_part p.warning {
 		background-image: url(../img/mobile_nodoubt-bcg.jpg);
 		background-position: bottom left;
 		background-size: 100% auto;
-		padding-bottom: 75vw;
+		padding-bottom: 55vw;
 		padding-top: 40px;
 		background-color: #f8f6f6;
 	}
@@ -1850,9 +1850,11 @@ section.promo .right_part p.warning {
 	section.gift:before {
 		width: 100%;
 	}
-	section.gift ul,
-	.nodoubts p {
+	section.gift ul {
 		width: 100%;
+	}
+	.nodoubts p {
+		width: 65%;
 	}
 	.how .content_wrap {
 		padding-bottom: 50px;
@@ -1984,6 +1986,12 @@ section.promo .right_part p.warning {
 	}
 	.how .trade_button {
 		font-size: 14px;
+	}
+	.nodoubts {
+		padding-bottom: 90vw;
+	}
+	.nodoubts p {
+		width: 100%;
 	}
 }
 @media all and (max-height: 1000px) {
