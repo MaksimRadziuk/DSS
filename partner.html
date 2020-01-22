@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+
+	<title>Партнерам</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="libs/FlipClock-master/compiled/flipclock.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/partner.css">
+
+
+</head>
+
+<body>
+
+	<div id="popup_background"></div>
+	<div class="popup" id="videoWrap">
+		<div class="popup_header">
+			<div class="title">Разница методов</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="video_wrap">
+				<iframe class="modal-video" src="https://www.youtube.com/embed/u6LvZz6lBQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="loginWindow">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<input type="text" placeholder="Имя пользователя">
+				<input type="text" placeholder="Пароль">
+				<button class="submit">Войти</button>
+				<input type="checkbox" id="rememberMe">
+				<label for="rememberMe">Запомнить меня</label>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" id="getRegistrationLoginWindow">Еще не пользователь DSS? Зарегистрируйтесь</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="registration">
+		<div class="popup_header">
+			<div class="title">Вход</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<form class="login_form">
+				<div class="input_wrapper">
+					<input type="text" placeholder="Имя пользователя">
+					<input type="text" placeholder="Пароль">
+					<input type="text" placeholder="Реферальная ссылка">
+					<input type="text" placeholder="Подтвердите пароль">
+					<input type="text" placeholder="Введите ваш email">
+					<div class="select_wrap">
+						<select name="location" id="">
+							<option value="rus">Россия</option>
+							<option value="by">Беларусь</option>
+							<option value="ua">Украина</option>
+							<option value="kz">Казахстан</option>
+							<option value="chn">Китай</option>
+						</select>
+						<div class="select_item"></div>
+					</div>
+					<div class="captcha"></div>
+					<div class="checkbox_wrap">
+						<input type="checkbox" id="agreeRegistrationForm">
+						<label for="agreeRegistrationForm">Я согласен с <a href="#">правилами сервиса</a>, <a href="#">агентским договором</a> и даю свое согласие на <a href="#">обработку персональных данных</a></label>
+					</div>
+				</div>
+				<button class="submit">Зарегистрироваться</button>
+				<a href="#" id="getLoginWindowRegistrationForm">Уже есть аккаунт?</a>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="levels">
+		<div class="popup_header">
+			<div class="title">Уровни</div>
+			<div class="close">
+				<span></span><span></span>
+			</div>
+		</div>
+		<div class="popup_content">
+			<div class="img_wrap">
+				<img src="img/infographic_img.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="mobileMenu">
+		<div class="close">
+			<span></span><span></span>
+		</div>
+		<ul>
+			<li><a href="product.html">Продукты<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="partner.html">Партнерам<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="advantage.html">Преимущества<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="faq.html">FAQ<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="action.html">Розыгрыши<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="case.html">Кейсы<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="about.html">О компании<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="blog.html">Блог<img src="img/double_arrows.jpg" alt=""></a></li>
+			<li><a href="contact.html">Контакты<img src="img/double_arrows.jpg" alt=""></a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="topbar">
+			<div class="container">
+				<div class="mobile_hamburger" id="mobileMenuTrigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="logo_wrap"><a href="index.html"><img src="img/logo.jpg" alt="DSS"></a></div>
+				<div class="phone_wrap"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:88000000000">8 (800) 800 00 00</a></div>
+				<div class="adress_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i><span>г.Краснодар, ул.Твардовского, д.156 оф.119</span></div>
+				<div class="login_wrap"><i class="fa fa-key" aria-hidden="true"></i><a href="#" id="popupLoginTrigger">Вход / </a><a href="#" id="popupRegistrationTrigger">Регистрация</a></div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="logo_wrap"></div>
+				<ul class="navigation">
+					<li><a href="product.html">Продукты</a></li>
+					<li><a href="partner.html">Партнерам</a></li>
+					<li><a href="advantage.html">Преимущества</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="action.html">Розыгрыши</a></li>
+					<li><a href="case.html">Кейсы</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</header>
+
+	
+	<main class="ppartner_page">
+		<section class="page_content">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><span> > </span></li>
+						<li><a href="#">Партнерам</a></li>
+					</ul>
+				</div>
+				<h1>Партнерам</h1>
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, dolorem deserunt quos consectetur pariatur recusandae velit sapiente consequuntur illum minus nulla dolore iure, in, modi sunt sequi voluptates exercitationem quaerat. Nulla dolores minus cum, reprehenderit fugit obcaecati culpa ipsam, dolor sequi, consequatur excepturi, fuga. Voluptates sint at dolorem ipsam distinctio, atque libero rem, id a obcaecati quod exercitationem repellendus laudantium!</p>
+				<a href="#" class="comparison">Сравнение бизнес пакетов</a>
+				<h2>Варианты участия в партнерской программе</h2>
+				<div class="patnership_wrap">
+					<div class="partnership_block lite">
+						<div class="colored">
+							<div class="title">Lite</div>
+							<div class="price">300</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block lite">
+						<div class="colored">
+							<div class="title">Lite</div>
+							<div class="price">300</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block start">
+						<div class="colored">
+							<div class="title">Start</div>
+							<div class="price">150</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block start">
+						<div class="colored">
+							<div class="title">Start</div>
+							<div class="price">150</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block optima">
+						<div class="colored">
+							<div class="title">Optima</div>
+							<div class="price">1000</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block optima">
+						<div class="colored">
+							<div class="title">Optima</div>
+							<div class="price">1000</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block vip">
+						<div class="colored">
+							<div class="title">VIP</div>
+							<div class="price">2000</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block vip">
+						<div class="colored">
+							<div class="title">VIP</div>
+							<div class="price">2000</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="partnership_block ultravip">
+						<div class="colored">
+							<div class="title">Ultra VIP</div>
+							<div class="price">3000</div>
+							<div class="period">12 месяцев</div>
+							<button>Стать партнером</button>
+						</div>
+						<div class="content">
+							<div class="title">В бизнес пакет входит:</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam aperiam in eaque commodi nam, autem dignissimos cumque reprehenderit, nostrum neque quos sit. Dolorem corporis, est labore blanditiis, minus aspernatur.</p>
+						</div>
+						<div class="income">
+							<div class="title">Доходы по плану вознаграждения:</div>
+							<ul>
+								<li>Премия "старт"</li>
+								<li>Групповая премия 8%</li>
+								<li>Лидерская спонсорская премия</li>
+								<li>Премия на представительские расходы</li>
+								<li>Подарки за статусы</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bonus_wrap">
+					<h2>Стартовый бонус</h2>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nihil ipsa possimus iste. Neque consequatur ratione unde expedita officiis qui laborum ipsam optio perferendis quo commodi debitis, nam molestias iure.</p>
+					<div class="bonus_table">
+						<div class="th_cell first">Пакет</div>
+						<div class="th_cell">1 линия</div>
+						<div class="th_cell">2 линия</div>
+						<div class="th_cell">3 линия</div>
+						<div class="td_cell first vip">VIP </div>
+						<div class="td_cell">
+							<div class="title">1 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell">
+							<div class="title">2 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell">
+							<div class="title">3 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell first optima">Optima</div>
+						<div class="td_cell">
+							<div class="title">1 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell">
+							<div class="title">2 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell">
+							<div class="title">3 линия</div>
+							---
+						</div>
+						<div class="td_cell first start">Start</div>
+						<div class="td_cell">
+							<div class="title">1 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell">
+							<div class="title">2 линия</div>
+							---
+						</div>
+						<div class="td_cell">
+							<div class="title">3 линия</div>
+							---
+						</div>
+						<div class="td_cell first lite">Lite</div>
+						<div class="td_cell">
+							<div class="title">1 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell">
+							<div class="title">2 линия</div>
+							---
+						</div>
+						<div class="td_cell">
+							<div class="title">3 линия</div>
+							---
+						</div>
+						<div class="td_cell first beginner last_row">Beginner</div>
+						<div class="td_cell last_row">
+							<div class="title">1 линия</div>
+							<ul>
+								<li class="orange">$2000 = 15% = $300</li>
+								<li class="pink">$1000 = 10% = $100</li>
+								<li class="green">$500 = 5% = $25</li>
+								<li class="blue">$300 = 5% = $15</li>
+								<li class="blue">$150 = 5% = $7,5</li>
+								<li class="grey">$100 = 4% = $4</li>
+							</ul>
+						</div>
+						<div class="td_cell last_row">
+							<div class="title">2 линия</div>
+							---
+						</div>
+						<div class="td_cell last_row">
+							<div class="title">3 линия</div>
+							---
+						</div>
+					</div>
+				</div>
+				<div class="group_wrap">
+					<h2>Групповой бонус</h2>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum deleniti a eveniet suscipit veritatis cum, quis dolores adipisci expedita fugit quae sint laudantium modi libero rem dolore incidunt molestiae ullam. Iure repudiandae hic eum quisquam a soluta maxime harum molestias consequuntur eveniet architecto, deleniti nulla, facere dolor aut cum doloremque corporis possimus impedit mollitia? Asperiores, cumque velit consequatur fuga porro.</p>
+					<div class="group_table">
+						<div class="th_cell first">Пакет</div>
+						<div class="th_cell">Бонус</div>
+						<div class="td_cell first orange">VIP</div>
+						<div class="td_cell orange">15% (максимально 300 000 баллов в месяц)</div>
+						<div class="td_cell first pink">Optima</div>
+						<div class="td_cell pink">10% (максимально 100 000 баллов в месяц)</div>
+						<div class="td_cell first green">Start</div>
+						<div class="td_cell green">10% (максимально 50 000 баллов в месяц)</div>
+						<div class="td_cell first blue">Lite</div>
+						<div class="td_cell blue">8% (максимально 30 000 баллов в месяц)</div>
+						<div class="td_cell first grey">Beginner</div>
+						<div class="td_cell grey">5% (максимально 20 000 баллов в месяц)</div>
+					</div>
+				</div>
+				<div class="leader_wrap">
+					<h2>Лидерская (спонсорская) премия</h2>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi autem suscipit itaque consectetur, dolores sed quidem necessitatibus aliquam facere, iusto unde fugiat, quisquam voluptas assumenda provident asperiores eos dolorum magnam.Dolore et voluptate nisi voluptas possimus. Non magnam sed hic quia amet ducimus sint, sequi, dolore facilis ipsam vero pariatur voluptatibus optio nostrum aperiam. Maiores animi laborum eum earum repellendus.</p>
+					<table class="desktop" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Менеджер</th>
+								<th>Директор</th>
+								<th>Региональный партнер</th>
+								<th>Федеральный партнер</th>
+								<th>Международный партнер</th>
+								<th>Презид-ая группа, ур. серебро</th>
+								<th>Презид-ая группа, ур. золото</th>
+								<th>Презид-ая группа, ур. бриллиант</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>5 000 баллов</td>
+								<td>10 000 баллов</td>
+								<td>25 000 баллов</td>
+								<td>50 000 баллов</td>
+								<td>100 000 баллов</td>
+								<td>250 000 баллов</td>
+								<td>500 000 баллов</td>
+								<td>1 000 000 баллов</td>
+							</tr>
+							<tr>
+								<td>---</td>
+								<td>---</td>
+								<td>1:1 директор</td>
+								<td>2:2 директор</td>
+								<td>3:3 директор</td>
+								<td>4:4 директор</td>
+								<td>5:5 директор</td>
+								<td>6:6 директор</td>
+							</tr>
+							<tr>
+								<td>10% 2% 1%</td>
+								<td>11% 2% 1%</td>
+								<td>12% 3% 2% 1%</td>
+								<td>13% 3% 2% 1%</td>
+								<td>14% 3% 2% 1%</td>
+								<td>16% 5% 4% 3% 1%</td>
+								<td>18% 5% 4% 3% 2% 1%</td>
+								<td>20% 5% 4% 3% 2% 1%</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="mobile">
+						<thead>
+							<tr>
+								<th>Менеджер</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>5 000 баллов</td>
+							</tr>
+							<tr>
+								<td>---</td>
+							</tr>
+							<tr>
+								<td>10% 2% 1%</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Директор</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>10 000 баллов</td>
+							</tr>
+							<tr>
+								<td>---</td>
+							</tr>
+							<tr>
+								<td>11% 2% 1%</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Региональный партнер</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>25 000 баллов</td>
+							</tr>
+							<tr>
+								<td>1:1 директор</td>
+							</tr>
+							<tr>
+								<td>12% 3% 2% 1%</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Федеральный партнер</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>50 000 баллов</td>
+							</tr>
+							<tr>
+								<td>2:2 директор</td>
+							</tr>
+							<tr>
+								<td>13% 3% 2% 1%</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Международный партнер</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100 000 баллов</td>
+							</tr>
+							<tr>
+								<td>3:3 директор</td>
+							</tr>
+							<tr>
+								<td>14% 3% 2% 1%</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Презид-ая группа, ур. серебро</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>250 000 баллов</td>
+							</tr>
+							<tr>
+								<td>4:4 директор</td>
+							</tr>
+							<tr>
+								<td>16% 5% 4% 3% 1%</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Презид-ая группа, ур. золото</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>500 000 баллов</td>
+							</tr>
+							<tr>
+								<td>5:5 директор</td>
+							</tr>
+							<tr>
+								<td>18% 5% 4% 3% 2% 1%</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Презид-ая группа, ур. бриллиант</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1 000 000 баллов</td>
+							</tr>
+							<tr>
+								<td>6:6 директор</td>
+							</tr>
+							<tr>
+								<td>20% 5% 4% 3% 2% 1%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		
+		<section class="inserted_block">
+			<div class="container">
+				<div class="text_part">
+					<div class="title">Инвестируют все. Успешны единицы.</div>
+					<p>Не отказывайте себе в удовольствии стать избранным уже сегодня</p>
+				</div>
+				<div class="arrows"><img src="img/arrows.png" alt=""></div>
+				<div class="link_wrap">
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo"><a href="index.html"><img src="img/footer_logo.png" alt=""></a></div>
+			<div class="copyright">&copy 2020 DSS South. Права защищены</div>
+			<div class="policies">
+				<a href="#">Политика конфиденциальности</a>
+				<a href="#">Использование cookies</a>
+				<a href="#">Пользовательское соглашение</a>
+			</div>
+			<div class="links">
+				<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="libs/slick/slick.js"></script>
+<script src="https://use.fontawesome.com/d9c416ed1a.js"></script>
+<script src="libs/FlipClock-master/compiled/flipclock.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
