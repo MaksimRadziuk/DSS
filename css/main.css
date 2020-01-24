@@ -1751,6 +1751,11 @@ section.promo .right_part p.warning {
 		font-weight: 400;
 	}
 }
+@media all and (max-width: 740px) {
+	#testStartScreen p {
+		width: 400px;
+	}
+}
 @media all and (max-width: 670px) {
 	.how .tabs {
 		flex-direction: column;
@@ -1841,8 +1846,8 @@ section.promo .right_part p.warning {
 		transform: translateX(50%);
 		border-left:1px solid #e5e5e5;
 	}
-	.test_slide {
-	    background-position: -105vw center;
+	#testStartScreen p {
+		width: 270px;
 	}
 	.firstScreen:before {
 		width: 100%;
@@ -1900,13 +1905,7 @@ section.promo .right_part p.warning {
 	.videos a.button_action {
 		margin-bottom: 50px;
 	}
-	#testStartScreen {
-	    background-position: right center;
-	}
 	#testLastScreen p {
-		width: 100%;
-	}
-	#testStartScreen p {
 		width: 100%;
 	}
 	.nodoubts h2 {
