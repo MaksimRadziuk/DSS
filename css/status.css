@@ -84,13 +84,16 @@ h1 {
 	background-image: url(../img/general-current.png);
 }
 .status_block .stick {
-	width: 0;
-	border-right:2px dashed #4daee3;
+	width: 4px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(../img/stick.png);
 	height: 350px;
 	position: relative;
 }
 .status_block.current .stick {
-	border-right:2px dashed #c9db4c;
+	background-image: url(../img/stick-current.png);
 }
 .status_block .stick .point {
 	display: block;
@@ -174,10 +177,27 @@ h1 {
 		top: 120px;
 	}
 	.status_block.general .stick .point {
-		top: 72px;
+		top: 52px;
 	}
 	.status_block .stick {
 		height: 180px;
+		background-size: 100% 150%;
+		width: 3px;
+	}
+	.status_wrap {
+	    background-position: center 185px;
+	}
+	.status_block.comander {
+		padding-top: 90px;
+	}
+	.status_block.recruit {
+		padding-top: 175px;
+	}
+	.status_block.volonteur {
+		padding-top: 220px;
+	}
+	.status_block.newborn {
+		padding-top:200px;
 	}
 }
 @media all and (max-width: 960px) {
@@ -230,6 +250,9 @@ h1 {
 	.status_wrap:before {
 		transform: rotateZ(-10deg);
 	}
+	.status_block .stick {
+		background-size: 100% 200%;
+	}
 }
 @media all and (max-width: 860px) {
 	.status_wrap:before {
@@ -277,16 +300,13 @@ h1 {
 	}
 	.status_block .stick {
 		position: absolute;
-		left: -30px;
+		left: -32px;
 		top: 60px;
-		width: 44%;
-		height: 0px;
-		border-right: none;
-		border-bottom:2px dashed #4daee3;
-	}
-	.status_block.current .stick {
-		border-right: none;
-		border-bottom:2px dashed #c9db4c;
+		width: 4px;
+		height: 40vw;
+		transform: rotateZ(-90deg);
+		transform-origin: top;
+		background-size: 100% 100%;
 	}
 	.status_block .stick .point {
 		top: -11px !important;
@@ -305,19 +325,18 @@ h1 {
 	}
 	.status_block .icon_wrap {
 		margin-bottom: 30px;
+		position: relative;
+		z-index: 10;
+		background-color: #fff;
 	}
 }	
-@media all and (max-width: 740px) {
-	
-}
 @media all and (max-width: 660px) {
 	h1 {
 		font-size: 28px;
 	}
 	.status_block .stick {
-		width: 42%;
+		background-size: 100% 140%;
 	}
-
 }
 @media all and (max-width: 560px) {
 	h1 {
@@ -345,139 +364,13 @@ h1 {
 	}
 	.status_block .stick {
 		top: 48px;
-		width: 44%;
 	}
 	.status_block {
 		display: block;
 	}
-}
-@media all and (max-width: 380px) {
+
 	.status_block .stick {
-		width: 43%;
-	}
-}
-@media all and (max-height: 900px) and (min-width: 1100px) {
-	.status_wrap {
-		background-position: center 250px;
-	}
-	.status_block .stick {
-		height: 220px;
-	}
-	.status_block .stick .point {
-		top: 95px;
-	}
-}
-@media all and (max-height: 700px) and (min-width: 1100px) {
-	.status_block.newborn {
-	    padding-top: 220px;
-	}
-	.status_block.volonteur {
-	    padding-top: 240px;
-	}
-	.status_block.recruit {
-	    padding-top: 195px;
-	}
-	.status_block.comander {
-	    padding-top: 110px;
-	}
-	.status_wrap {
-	    background-position: center 205px;
-	}
-	.status_block.newborn .stick .point {
-		top: 158px;
-	}
-	.status_block.volonteur .stick .point {
-		top: 155px;
-	}
-	.status_block.recruit .stick .point {
-		top: 160px;
-	}
-	.status_block.comander .stick .point {
-		top: 145px;
-	}
-	.status_block.general .stick .point {
-		top: 50px;
-	}
-}
-@media all and (max-height: 600px) and (min-width: 1100px) {
-	.status_block.comander {
-		padding-top: 30px;
-	}
-	.status_block.recruit {
-		padding-top: 60px;
-	}
-	.status_block.volonteur {
-		padding-top: 90px;
-	}
-	.status_block.newborn {
-		padding-top: 120px;
-	}
-	.status_wrap {
-		background-image: none;
-		position: relative;
-		justify-content: space-between;
-	}
-	.status_wrap:before {
-		content: '';
-		display: block;
-		border-bottom: 2px dashed #4daee3;
-		position: absolute;
-		z-index: 0;
-		top: 340px;
-		left: 0;
-		width: 100%;
-		transform: rotateZ(-10deg);
-	}
-	.status_block.general .stick .point {
-	    top: 139px;
-	}
-	.status_block.comander .stick .point {
-	    top: 140px;
-	}
-	.status_block.recruit .stick .point {
-	    top: 141px;
-	} 
-	.status_block.volonteur .stick .point {
-	    top: 142px;
-	}
-	.status_block.newborn .stick .point {
-	    top: 143px;
-	}
-}
-@media all and (max-height: 500px) and (min-width: 1100px) {
-	.status_block.comander {
-		padding-top: 15px;
-	}
-	.status_block.recruit {
-		padding-top: 30px;
-	}
-	.status_block.volonteur {
-		padding-top: 45px;
-	}
-	.status_block.newborn {
-		padding-top: 60px;
-	}
-	.status_block .stick {
-	    height: 130px;
-	}
-	.status_block.general .stick .point {
-	    top: 79px;
-	}
-	.status_block.comander .stick .point {
-	    top: 80px;
-	}
-	.status_block.recruit .stick .point {
-	    top: 81px;
-	} 
-	.status_block.volonteur .stick .point {
-	    top: 82px;
-	}
-	.status_block.newborn .stick .point {
-	    top: 83px;
-	}
-	.status_wrap:before {
-		transform: rotateZ(-5deg);
-		top: 250px;
+		background-size: 100% 190%;
 	}
 }
 @media all and (device-width: 1024px) and (device-height: 768px) {
